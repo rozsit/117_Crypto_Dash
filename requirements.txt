@@ -1,0 +1,9 @@
+dash>=2.17
+dash-bootstrap-components>=1.6.0
+plotly>=5.22
+yfinance>=0.2.43
+pandas>=2.2
+PyYAML>=6.0.1
+numpy>=1.26
+streamlit>=1.36
+

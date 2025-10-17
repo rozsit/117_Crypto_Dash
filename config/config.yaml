@@ -1,0 +1,38 @@
+tickers:
+  - "DUEL28868-USD"
+  - "XEM-USD"
+  - "SOIL-USD"
+  - "GOAL-USD"
+  - "FORM23635-USD"
+  - "MUBARAK-USD"
+  - "AVNT-USD"
+  - "IO29835-USD"
+  - "MIRA38495-USD"
+  - "PRIME23711-USD"
+  - "BAKE-USD"
+  - "GRASS32956-USD"
+  - "REN-USD"
+
+defaults:
+  period: "1d"      # default time range
+  interval: "5m"    # default interval
+
+cache_ttl_seconds: 600   # 10 minutes
+
+ui:
+  bootstrap_theme: "DARKLY"  # options: CYBORG, DARKLY, SLATE, SOLAR, etc.
+  columns_per_row: 2
+  chart_height: 380
+  time_offset_hours: 2     # <-- add: shift X axis by +2 hours
+  time_label: "UTC+02:00"  # <-- optional: shown in axis title & hover
+
+options:
+  periods: ["1d","5d","1mo","3mo","6mo","1y","2y","5y","10y","ytd","max"]
+  intervals: ["1m","2m","5m","15m","30m","60m","90m","1h","1d","5d","1wk","1mo","3mo"]
+
+logging:
+  level: "INFO"          # DEBUG / INFO / WARNING / ERROR
+  handlers: ["file"]     # ["console", "file"]
+  file: "logs/app.log"   # if handlers = 'file'
+  max_bytes: 1048576     # 1 MB
+  backup_count: 3
